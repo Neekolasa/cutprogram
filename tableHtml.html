@@ -1,0 +1,105 @@
+
+<script>
+	var ticketHtml = "<style type='text/css'>";
+	ticketHtml +="@font-face {font-family: '3of9Barcode'; src: url('3of9Barcode.TTF') format('truetype');}";
+	ticketHtml +=".barcode {font-family: '3of9Barcode'}";
+	ticketHtml +=".tg  {border-collapse:collapse;border-spacing:0;}";
+	ticketHtml +=".tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;";
+	ticketHtml +="  overflow:hidden;padding: 2px 0px;word-break:normal;}";
+	ticketHtml +=".tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;";
+	ticketHtml +="  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}";
+	ticketHtml +=".tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}";
+	ticketHtml +=".tg .tg-baqh{text-align:center;vertical-align:top}";
+	ticketHtml +=".tg .tg-iks7{background-color:#ffffff;border-color:#000000;text-align:left;vertical-align:top}";
+	ticketHtml +=".tg .tg-jbyd{background-color:#ffffff;border-color:#000000;text-align:center;vertical-align:top}";
+	ticketHtml +=".tg .tg-0lax{text-align:left;vertical-align:top}";
+	ticketHtml +=".tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}";
+	ticketHtml +=".tg .tg-ir4y{font-size:12px;font-weight:bold;text-align:center;vertical-align:top}";
+	ticketHtml +=".tg .tg-akbm{font-weight:bold;text-align:left;text-decoration:underline;vertical-align:top}";
+	ticketHtml +=".tg .tg-qnqf{background-color:#c0c0c0;font-size:22px;font-weight:bold;text-align:center;vertical-align:top}";
+	ticketHtml +=".tg .tg-t2cw{font-weight:bold;text-align:center;text-decoration:underline;vertical-align:top}";
+	ticketHtml +=".no-border {border: none;}";
+	ticketHtml +=".image{width: 40px; padding: 0 15px;}";
+	ticketHtml +="</style>";
+	ticketHtml +="<table class='tg'><thead>";
+	ticketHtml +="  <tr>";
+	ticketHtml +="    <th class='tg-baqh' colspan='5' style='border-bottom: none; border-right-width: 2px;border-left-width: 2px;border-top-width: 2px;'><span style=' padding: 0; padding-top: 10px; font-weight:bold'>TARJETA VIAJERA</span><br><span style='font-weight:bold'>ORIGEN CORTE CA </span></th>";
+	ticketHtml +="  </tr></thead>";
+	ticketHtml +="<tbody>";
+	ticketHtml +="  <tr>";
+	ticketHtml +="    <td class='tg-jbyd no-border' colspan='1' style='border-right: none;border-top: none;font-weight:bold;border-left-width: 2px;'>RACK</td>";
+	ticketHtml +="    <td class='tg-jbyd no-border' colspan='3' style='border: none !important;font-weight:bold'>NIVEL</td>";
+	ticketHtml +="    <td class='tg-jbyd no-border' colspan='1' style='border-left: none; border-top: none; border-right-width: 2px;font-weight:bold'>RIEL</td>";
+	ticketHtml +="  </tr>";
+	ticketHtml +="  <tr>";
+	ticketHtml +="    <td class='tg-amwm' colspan='1' style='border-right: none; border-bottom-width: 2px; text-align: center; font-size: 18px;border-left-width: 2px;'>75</td>";
+	ticketHtml +="    <td class='tg-amwm' colspan='3' style='border-right: none; border-left: none; border-bottom-width: 2px; font-size: 18px;'>B</td>";
+	ticketHtml +="    <td class='tg-amwm' colspan='1' style='border-left: none; border-bottom-width: 2px; border-right-width: 2px; text-align: center; font-size: 18px;'>14-18</td>";
+	ticketHtml +="  </tr>";
+	ticketHtml +="  <tr>";
+	ticketHtml +="    <td class='tg-amwm' style='border-right: none; border-bottom: none;border-left-width: 2px;'>LC:</td>";
+	   
+	ticketHtml +="    <td class='tg-1wig' colspan='3' style='border-left: none; border-right: none; border-bottom: none; text-align: center; font-size: 18px;'>LC518828</td>";
+	ticketHtml +="   	<td class='tg-0lax' style='border-left: none; border-bottom: none; border-top: none; border-right-width: 2px;'></td>";
+	 
+	ticketHtml +="  </tr>";
+	ticketHtml +="  <tr>";
+	ticketHtml +="    <td class='tg-baqh' style='border-left-width: 2px; font-size: 18px; border-top: none;border-bottom: none; border-right-width: 2px; font-size: 25px;' colspan='5'><p class='barcode'>*LC518828*</p></td>";
+	 
+	ticketHtml +="  </tr>";
+	ticketHtml +="  <tr>";
+	ticketHtml +="    <td class='tg-0lax' style='border-right: none; border-bottom: none; border-top: none;border-left-width: 2px;'></td>";
+	ticketHtml +="    <td class='tg-ir4y' style='border-right: none; border-left: none; border-bottom: none; border-top: none; font-size: 10px;'>CIRC</td>";
+	ticketHtml +="    <td class='tg-amwm' style='border-right: none; border-left: none; border-bottom: none; border-top: none;font-size: 12px;'>1587A</td>";
+	ticketHtml +="    <td class='tg-0lax' style='border-right: none; border-left: none; border-bottom: none; border-top: none; '></td>";
+	ticketHtml +="    <td class='tg-0lax' style='border-left: none; border-bottom: none; border-top: none; border-right-width: 2px;'></td>";
+	ticketHtml +="  </tr>";
+	ticketHtml +="  <tr>";
+	    
+
+	ticketHtml +="    <td class='tg-akbm' colspan='5' style='border-top: none; border-left-width: 2px;border-bottom-width: 2px; border-right-width: 2px; text-align: center;'>WHT/BLK</td>";
+
+	ticketHtml +="  </tr>";
+	ticketHtml +="  <tr>";
+	  	
+
+	ticketHtml +="    <td class='tg-baqh' colspan='5' style='align-content: center; border-right-width: 2px; border-left-width: 2px; border-bottom: none; border-top: none;text-align: center;'><img class='image' style='text-align: center;' src='gm_logo.jpg'><img class='image' style='text-align: center;' src='gm_logo.jpg'><img class='image' src='gm_logo.jpg'></td>";
+
+	   
+
+	ticketHtml +="  </tr>";
+	ticketHtml +="  <tr>";
+	ticketHtml +="    <td class='tg-amwm' colspan='5' style='border-right: none; border-bottom: none; border-top: none; border-left-width: 2px; border-right-width: 2px; text-align: center;'>L5P</td>";
+	ticketHtml +="  </tr>";
+	ticketHtml +="  <tr>";
+
+	ticketHtml +="    <td class='tg-baqh' colspan='5' style='border-right: none; border-bottom: none; border-top: none; border-left-width: 2px; border-right-width: 2px; text-align: center;'>KIT/EST</td>";
+
+	ticketHtml +="  </tr>";
+	ticketHtml +="  <tr>";
+	ticketHtml +="    <td class='tg-0lax' style='border-right: none; border-bottom: none; border-top: none;border-left-width: 2px;'></td>";
+	ticketHtml +="    <td class='tg-amwm' colspan='2'>PATINETA W3 EST. 2 </td>";
+	ticketHtml +="    <td class='tg-0lax' colspan='2' style='border-left: none; border-bottom: none; border-top: none; border-right-width: 2px;'></td>";
+	ticketHtml +="  </tr>";
+	ticketHtml +="  <tr>";
+	ticketHtml +="    <td class='tg-qnqf' style='border-right-width: 2px; border-left-width: 2px;' colspan='5'>DIRECTO</td>";
+	ticketHtml +="  </tr>";
+	ticketHtml +="  <tr>";
+	ticketHtml +="    <td class='tg-amwm' style='border-right: none; border-bottom: none;border-left-width: 2px;'>MAQ:</td>";
+	ticketHtml +="    <td class='tg-0lax' style='border-left: none; border-right: none; border-bottom: none;'></td>";
+	ticketHtml +="    <td class='tg-baqh' style='border-left: none; border-right: none; border-bottom: none;'>LONG1:</td>";
+	ticketHtml +="    <td class='tg-baqh' style='border-right: none; border-left: none; border-bottom: none;'>1190</td>";
+	ticketHtml +="    <td class='tg-t2cw' rowspan='2' style='border-left: none; border-right-width: 2px; border-bottom-width: 2px;transform: rotate(270deg); font-size: 10px;'>11-Jun-24</td>";
+	    
+	ticketHtml +="  </tr>";
+	ticketHtml +="  <tr>";
+	ticketHtml +="    <td class='tg-akbm' style='border-top: none; border-right: none; border-bottom-width: 2px; border-left-width: 2px;'>ATADOS:</td>";
+	ticketHtml +="    <td class='tg-akbm' style='border-right: none; border-top: none; border-left: none; border-bottom-width: 2px;'>2</td>";
+	ticketHtml +="    <td class='tg-t2cw' style='border-right: none; border-top: none; border-left: none; border-bottom-width: 2px;'>3187</td>";
+	ticketHtml +="    <td class='tg-0lax' style='border-right: none; border-top: none; border-left: none; border-bottom-width: 2px;'></td>";
+	ticketHtml +="  </tr>";
+	ticketHtml +="</tbody></table>";
+
+	document.write(ticketHtml)
+</script>
+
