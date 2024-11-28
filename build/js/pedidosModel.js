@@ -2,8 +2,8 @@ $(document).ready(function(){
     var leadCodes = [];
     getTempData();
     $("#num_empleado").focus();
-    $("#leadcodeButton").prop("disabled", true);
-    $("#leadcode_number").prop("disabled", true);
+    $("#leadcodeButton").prop("disabled", false);
+    $("#leadcode_number").prop("disabled", false);
     var lastInputTime = 0;
     var typingDelay = 50;
     scan = false;
@@ -37,7 +37,7 @@ $(document).ready(function(){
 				$("#leadcode_number").focus();
 			}
 			else{
-				$("#leadcode_number").prop("disabled", true);
+				$("#leadcode_number").prop("disabled", false);
 			}
 
 
@@ -66,7 +66,7 @@ $(document).ready(function(){
 
     $("#leadcodeButton").on('click', function(event) {
         event.preventDefault();
-        if (!scan) {
+        if (false/*!scan*/) {
             new PNotify({
                 title: 'Error',
                 text: 'Debe escanear el numero de empleado',
